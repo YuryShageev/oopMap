@@ -49,17 +49,18 @@ public class Main {
     public static void hateMaps() {
         Random random = new Random();
 
+        int count = 0;
         Map<Integer, String> map = new HashMap<>();
-        map.put(random.nextInt(20), "Света");
-        map.put(random.nextInt(20), "Вика");
-        map.put(random.nextInt(20), "Марина");
-        map.put(random.nextInt(20), "Оля");
-        map.put(random.nextInt(20), "Рита");
-        map.put(random.nextInt(20), "Катя");
-        map.put(random.nextInt(20), "Олеся");
-        map.put(random.nextInt(20), "Алина");
-        map.put(random.nextInt(20), "Маша");
-        map.put(random.nextInt(20), "Лиза");
+        map.put(++count, "Света");
+        map.put(++count, "Вика");
+        map.put(++count, "Марина");
+        map.put(++count, "Оля");
+        map.put(++count, "Рита");
+        map.put(++count, "Катя");
+        map.put(++count, "Олеся");
+        map.put(++count, "Алина");
+        map.put(++count, "Маша");
+        map.put(++count, "Лиза");
         System.out.println(map);
 
         int number = 0;
