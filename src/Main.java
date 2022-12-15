@@ -9,6 +9,9 @@ public class Main {
         Map<String, List<Integer>> vasya = new HashMap<>();
         vasya.put("Вася", List.of(random.nextInt(1000), random.nextInt(1000), random.nextInt(1000)));
         vasya.put("Коля", List.of(random.nextInt(1000), random.nextInt(1000), random.nextInt(1000)));
+        vasya.put("Ваня", List.of(random.nextInt(1000), random.nextInt(1000), random.nextInt(1000)));
+        vasya.put("Рома", List.of(random.nextInt(1000), random.nextInt(1000), random.nextInt(1000)));
+        vasya.put("Юра", List.of(random.nextInt(1000), random.nextInt(1000), random.nextInt(1000)));
 
         System.out.println(vasya);
 
@@ -40,32 +43,33 @@ public class Main {
 //            yura1.put(builder1.toString(),number);
 //        }
 //        System.out.println(builder1);
-//        hateMaps();
+        hateMaps();
     }
 
-//    public static void hateMaps() {
-//        Random random = new Random();
-//
-//        Map<Integer, String> map = new HashMap<>();
-//        map.put(random.nextInt(20), "Света");
-//        map.put(random.nextInt(20), "Вика");
-//        map.put(random.nextInt(20), "Марина");
-//        map.put(random.nextInt(20), "Оля");
-//        map.put(random.nextInt(20), "Рита");
-//        map.put(random.nextInt(20), "Катя");
-//        map.put(random.nextInt(20), "Олеся");
-//        map.put(random.nextInt(20), "Алина");
-//        map.put(random.nextInt(20), "Маша");
-//        map.put(random.nextInt(20), "Лиза");
-//        System.out.println(map);
-//
-//        int number = 0;
-//        StringBuilder builder = new StringBuilder();
-//        for (Map.Entry<Integer, String> entry : map.entrySet()) {
-//
-//            number = number + 1;
-//            builder.append(number).append(". ").append(entry.getKey()).append(":").append(entry.getValue()).append(" \n");
-//        }
-//        System.out.println(builder);
-//    }
+    public static void hateMaps() {
+        Random random = new Random();
+
+        int count = 0;
+        Map<Integer, String> map = new HashMap<>();
+        map.put(++count, "Света");
+        map.put(++count, "Вика");
+        map.put(++count, "Марина");
+        map.put(++count, "Оля");
+        map.put(++count, "Рита");
+        map.put(++count, "Катя");
+        map.put(++count, "Олеся");
+        map.put(++count, "Алина");
+        map.put(++count, "Маша");
+        map.put(++count, "Лиза");
+        System.out.println(map);
+
+        int number = 0;
+        StringBuilder builder = new StringBuilder();
+        for (Map.Entry<Integer, String> entry : map.entrySet()) {
+
+            number = number + 1;
+            builder.append(number).append(". ").append(entry.getKey()).append(":").append(entry.getValue()).append(" \n");
+        }
+        System.out.println(builder);
+    }
 }
